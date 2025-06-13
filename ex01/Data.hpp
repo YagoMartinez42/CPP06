@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Serializer.cpp                                     :+:      :+:    :+:   */
+/*   Data.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samartin <samartin@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-06-11 13:57:54 by samartin          #+#    #+#             */
-/*   Updated: 2025-06-11 13:57:54 by samartin         ###   ########.fr       */
+/*   Created: 2025-06-13 12:06:54 by samartin          #+#    #+#             */
+/*   Updated: 2025-06-13 12:06:54 by samartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Serializer.hpp"
+#ifndef DATA_HPP
+# define DATA_HPP
+# include <iostream>
 
-uintptr_t Serializer::serialize(Data* ptr)
+typedef struct sData
 {
-    uintptr_t seriePtr = reinterpret_cast<uintptr_t>(ptr);
-    return (seriePtr);
-}
+    std::string name;
+    unsigned int index;
+	long units;
+    double weigth;
+} Data;
 
-Data* Serializer::deserialize(uintptr_t raw)
-{
-    Data* DataPtr = reinterpret_cast<Data *>(raw);
-    return (DataPtr);
-}
-
-Serializer::~Serializer() {}
+#endif
