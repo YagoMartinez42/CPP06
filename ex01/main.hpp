@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScalarConverter.hpp                                :+:      :+:    :+:   */
+/*   main.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samartin <samartin@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-06-03 11:03:12 by samartin          #+#    #+#             */
-/*   Updated: 2025-06-03 11:03:12 by samartin         ###   ########.fr       */
+/*   Created: 2025-06-11 13:55:10 by samartin          #+#    #+#             */
+/*   Updated: 2025-06-11 13:55:10 by samartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCALARCONVERTER_HPP
-# define SCALARCONVERTER_HPP
-# include <iostream>
-# include <iomanip>
-# include <limits>
-# include <cstdlib>
+#ifndef MAIN_HPP
+# define MAIN_HPP
 
-class ScalarConverter
-{
-	public:
-		static void convert(const std::string& input);
-		~ScalarConverter();
-	private:
-		ScalarConverter();
-		ScalarConverter(const ScalarConverter& orig);
-		ScalarConverter& operator=(const ScalarConverter& orig);
-};
+# ifndef TSTL
+#  define TSTL "\e[32m"
+# endif
+# ifndef TSTH
+#  define TSTH "\e[33m\e[44m"
+# endif
+# ifndef TSTR
+#  define TSTR "\e[00m"
+# endif
+
 #endif

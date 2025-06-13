@@ -1,8 +1,8 @@
-NAME		:= convert
+NAME		:= tester
 CXX			:= c++
 CXXFLAGS	:= -Wall -Werror -Wextra -std=c++98
 RM			:= rm -rf
-SRC			:= main.cpp ScalarConverter.cpp 
+SRC			:= main.cpp Serializer.cpp
 OBJ			:= ${SRC:.cpp=.o}
 
 all: ${NAME}

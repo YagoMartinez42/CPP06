@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScalarConverter.hpp                                :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samartin <samartin@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-06-03 11:03:12 by samartin          #+#    #+#             */
-/*   Updated: 2025-06-03 11:03:12 by samartin         ###   ########.fr       */
+/*   Created: 2025-06-03 11:04:11 by samartin          #+#    #+#             */
+/*   Updated: 2025-06-03 11:04:11 by samartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCALARCONVERTER_HPP
-# define SCALARCONVERTER_HPP
-# include <iostream>
-# include <iomanip>
-# include <limits>
-# include <cstdlib>
+#include "main.hpp"
 
-class ScalarConverter
+int main(void)
 {
-	public:
-		static void convert(const std::string& input);
-		~ScalarConverter();
-	private:
-		ScalarConverter();
-		ScalarConverter(const ScalarConverter& orig);
-		ScalarConverter& operator=(const ScalarConverter& orig);
-};
-#endif
+
+	return (0);
+}
