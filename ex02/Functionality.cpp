@@ -17,7 +17,6 @@ Base* generate(void)
 	Base* theChoosenOne;
 	int opt;
 
-	std::srand(std::time(0));
 	opt = std::rand() % 3;
 	if (opt == 0)
 		theChoosenOne = new A;

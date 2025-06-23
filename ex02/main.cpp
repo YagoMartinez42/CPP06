@@ -16,6 +16,7 @@ int main()
 {
 	Base* randomObject;
 
+	std::srand(std::time(0));
 	std::cout << std::endl;
 	std::cout << TSTH << "=========================================" << TSTR << std::endl;
 	std::cout << TSTH << "|  Generating random objects six times  |" << TSTR << std::endl;
@@ -27,12 +28,12 @@ int main()
 		randomObject = generate();
 		if (i & 1)
 		{
-			std::cout << TSTH << "Identifiying as a reference." << TSTR << std::endl;
+			std::cout << TSTL << "Identifiying as a reference." << TSTR << std::endl;
 			identify(*randomObject);
 		}
 		else
 		{
-			std::cout << TSTH << "Identifiying as a pointer." << TSTR << std::endl;
+			std::cout << TSTL << "Identifiying as a pointer." << TSTR << std::endl;
 			identify(randomObject);
 		}
 		delete(randomObject);
