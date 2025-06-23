@@ -1,6 +1,6 @@
 .DS_Store
 .vscode
 *.o
-ex00/tester
+ex00/convert
 ex01/tester
 ex02/tester
